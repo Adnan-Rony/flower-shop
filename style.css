@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/* navber section */
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+   
+    height: 90px;
+    align-items: center;
+    
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style: none;
+    margin-right: 18px;
+    font-size: 20px;
+    
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.spn-nav{
+    color: #FF8F52;
+}
+/* banner section */
+
+.banner-container{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;
+
+    padding-left: 110px;
+    padding-right: 110px;
+}
+.banner-pictures{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+.banner-pictures img{
+    width: 192px;
+height: 192px;
+border-radius: 10px;
+border: 1px solid #D9D9D9;
+
+}
+.banner-text h1{
+    color: #121212;
+font-family: Roboto;
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+}
+.banner-text p{
+    color: #838383;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-top: 5px;
+
+}
+.banner-btn{
+    width: 103px;
+height: 40px;
+flex-shrink: 0;
+border-radius: 5px;
+background: #FF8F52;
+border: 0;
+color: white;
+margin-top: 20px;
+}
+/* best-seller section */
+.best-seller{
+    padding-top: 150px;
+    /* background-color: #F2F2F2; */
+    padding-bottom: 100px;
+ 
+}
+.h2{
+    text-align: center;
+    color: #000;
+    font-family: Roboto;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.saller-img img{
+    width: 251.572px;
+height: 229.901px;
+
+
+}
+.saller-img{
+    display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 10px;
+
+
+
+}
+.card{
+   padding: 5px;
+   padding-top: 20px;
+}
+.saller-img .card{
+    width: 257px;
+height: 346px;
+
+border-radius: 5px;
+
+background: #FFF;
+justify-content: center;
+align-items: center;
+
+
+}
+.card img{
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+    
+    
+}
+main{
+    background: #F2F2F2;
+}
+
+
+/* latest section */
+
+
+
+
+
+
+
+/* mobile user */
+@media screen and (max-width:576px) {
+    .nav-container, .banner-container{
+        flex-direction: column;
+    }
+    .banner-pictures, .saller-img{
+        grid-template-columns:repeat(1,1fr) ;
+    }
+    .card{
+        margin:auto;
+        padding-left: 28px;
+    }
+    
+}
